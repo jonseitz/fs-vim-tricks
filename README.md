@@ -2,12 +2,12 @@
 
 ## Overview
 
-  I. Text Editors: A Personal History
-  II. What is Vim?
-  III. Vim Basics
-  IV. Cool Things Vim Can Do
-  V. Plugins/Extensions
-  VI. Conclusion
+    I. Text Editors: A Personal History
+    II. What is Vim?
+    III. Vim Basics
+    IV. Cool Things Vim Can Do
+    V. Plugins/Extensions
+    VI. Conclusion
 
 ## Text Editors: A Personal History
 
@@ -46,7 +46,7 @@ Examples:
 
 For Writing Text (aka "The Boring Part")
 
-**Except**: Inserting text is also considered a command in Vim, so you can use a <COUNT> to repeat the insertion.
+**Except**: Inserting text is also considered a command in Vim, so you can use a `<COUNT>` to repeat the insertion.
 
 ### Command Mode
 
@@ -56,8 +56,8 @@ Examples:
 
 - `:w` - write (save) the current file
 - `:q` - quit Vim
-- `:wq` - write and quit
 - `:q!` - quit without saving
+- `:wq` - write and quit
 - `:!<command>` - run an external command
 - `:r!<filename>` - Insert the output of the current command at the cursor position
 
@@ -88,11 +88,11 @@ Examples:
 
 ### Copy/Paste
 
-- `y` - yank (copy) the selected Text
+- `y` - yank (copy) the selected text
 - `d` - delete the selected text (also yanks it)
 
-- `yy` - yank an entire Line
-- `dd` - delete an entire Line (also yanks it)
+- `yy` - yank an entire line
+- `dd` - delete an entire line (also yanks it)
 
 - `p` - paste the yanked text after the cursor (or after the line if you yanked a line)
 - `P` - paste the yanked text before the cursor  (or after the line if you yanked a line)
@@ -105,9 +105,9 @@ Examples:
 ### Documentation
 
 - `:help <topic>` - open the help documentation for a specific topic
-- `:tutor` - start the Vim tutor for learning Vim basics
+- `vimtutor` - start the Vim tutor for learning Vim basics
 
-### Searching a file
+### Search
 
 - `/<term>` - search forward for a term
 - `?<term>` - search backward for a term
@@ -120,16 +120,15 @@ Examples:
 
 - `d<count>f<character>` - delete from the cursor to the <count>th occurrence of `<character>`
 - `d<count>F<character>` - delete from the cursor to the <count>th occurrence of `<character>` in reverse
-
 - `d<count>/<pattern>` - delete from the cursor to the next occurrence of `<pattern>`
 - `d<count>?<pattern>` - delete from the cursor to the previous occurrence of `<pattern>`
 
-### RegExp find and replace
+### RegEx Find and Replace
 
 - `:s/<pattern>/<replacement>/` - find and replace first occurrence in the current line
 - `:%s/<pattern>/<replacement>/` - find and replace first occurrences in each line of the entire file
 
-#### flags
+#### Flags
 
 - `/g` - replace all occurrences in the line/file
 - `/i` - Case insensitive replacement
@@ -141,10 +140,6 @@ Examples:
 
 - `:sort` - sort the lines in the current selection
 - `:sort!` - sort the lines in the current selection in reverse order
-
-### Insert a date timestamp
-
-- `:r!date "\%Y-\%m-\%d \%H:\%M:\%S"` - insert a timestamp at the cursor position
 
 ### Windows/Tabs
 
@@ -166,7 +161,7 @@ Examples:
 
 ### Record Macros
 
-Vim  can record all of your keystrokes into a macro register, which can then be replayed later.
+Vim can record all of your keystrokes into a macro register, which can then be replayed later.
 
 - `q<register>` - start recording a macro into the specified register
 - `q` - stop recording the macro

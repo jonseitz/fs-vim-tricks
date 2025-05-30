@@ -90,10 +90,8 @@ Examples:
 
 - `y` - yank (copy) the selected text
 - `d` - delete the selected text (also yanks it)
-
 - `yy` - yank an entire line
 - `dd` - delete an entire line (also yanks it)
-
 - `p` - paste the yanked text after the cursor (or after the line if you yanked a line)
 - `P` - paste the yanked text before the cursor  (or after the line if you yanked a line)
 
@@ -149,7 +147,6 @@ Examples:
 - `Ctrl-w j` - move to the window below
 - `Ctrl-w k` - move to the window above
 - `Ctrl-w l` - move to the right window
-
 - `:tabnew` - open a new tab
 - `:tabnext` - switch to the next tab
 - `:tabprev` - switch to the previous tab
